@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitchen on Call - Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 100px; /* Space for fixed top buttons */
+    }
+    header {
+      background-color: #ff7043;
+      color: white;
+      text-align: center;
+      padding: 1rem 1rem 0.5rem 1rem;
+      position: relative;
+      z-index: 1100;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    header img {
+      max-height: 50px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline;
+      font-size: 1.8rem;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    nav.fixed-order-buttons {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ff7043; /* Changed to orange */
+      padding: 0.6rem 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      z-index: 1200;
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 0 0 10px 10px;
+    }
+    nav.fixed-order-buttons a {
+      flex: 1;
+      max-width: 280px;
+      padding: 0.8rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #ff7043; /* Orange background */
+      transition: background-color 0.3s;
+    }
+    nav.fixed-order-buttons a:hover {
+      background-color: #e85d30; /* Darker orange on hover */
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #ff7043;
+      border-bottom: 2px solid #ff7043;
+      padding-bottom: 0.3rem;
+    }
+    .menu-section {
+      margin-bottom: 2rem;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3rem 0;
+      border-bottom: 1px dotted #ccc;
+    }
+    .order-advisory {
+      background-color: #fff0e5;
+      padding: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+      margin-bottom: 2rem;
+      border: 1px solid #ff7043;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+    .social a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      nav.fixed-order-buttons {
+        padding: 0.5rem 0.5rem;
+        gap: 0.5rem;
+      }
+      nav.fixed-order-buttons a {
+        font-size: 1rem;
+        padding: 0.7rem;
+      }
+      main {
+        margin: 1rem auto;
+        padding: 0 1rem;
+      }
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu-item span:last-child {
+        margin-top: 0.2rem;
+        font-weight: bold;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="fixed-order-buttons">
+    <a href="index.html">Home</a>
+    <a href="https://wa.me/254796257805" target="_blank">💬 Order on WhatsApp</a>
+  </nav>
+
+  <header>
+    <img src="logo.png" alt="Kitchen on Call Logo" />
+    <h1>KITCHEN ON CALL</h1>
+  </header>
+
+  <main>
+    <!-- Menu Sections -->
+    <section class="menu-section">
+      <h2>BREAKFAST</h2>
+      <div class="menu-item"><span>Toast bread (4 slices)</span><span>Ksh 35</span></div>
+      <div class="menu-item"><span>Pancake</span><span>Ksh 30</span></div>
+      <div class="menu-item"><span>Smokie</span><span>Ksh 40</span></div>
+      <div class="menu-item"><span>Mayai (Omelette)</span><span>Ksh 50</span></div>
+      <div class="menu-item"><span>Boiled Eggs</span><span>Ksh 50</span></div>
+      <div class="menu-item"><span>Beef Samosa</span><span>Ksh 40</span></div>
+      <div class="menu-item"><span>Samosa Ndengu</span><span>Ksh 15</span></div>
+    </section>
+
+    <section class="menu-section">
+      <h2>MAIN COURSE</h2>
+      <div class="menu-item"><span>Beef Stew</span><span>Ksh 170</span></div>
+      <div class="menu-item"><span>Kuku Stew</span><span>Ksh 270</span></div>
+      <div class="menu-item"><span>Omena</span><span>Ksh 120</span></div>
+      <div class="menu-item"><span>Bhajia</span><span>Ksh 120</span></div>
+      <div class="menu-item"><span>Bhajia Masala</span><span>Ksh 170</span></div>
+      <div class="menu-item"><span>Chips Masala</span><span>Ksh 150</span></div>
+      <div class="menu-item"><span>Plain Chips</span><span>Ksh 100</span></div>
+      <div class="menu-item"><span>Githeri ya Waru</span><span>Ksh 120</span></div>
+      <div class="menu-item"><span>Matumbo Dry Fry</span><span>Ksh 170</span></div>
+      <div class="menu-item"><span>Matumbo Wet Fry</span><span>Ksh 140</span></div>
+    </section>
+
+    <section class="menu-section">
+      <h2>CHAPATI CORNER</h2>
+      <div class="menu-item"><span>Chapati Plain</span><span>Ksh 30</span></div>
+      <div class="menu-item"><span>Pumpkin Chapati</span><span>Ksh 40</span></div>
+      <div class="menu-item"><span>Carrot Chapati</span><span>Ksh 40</span></div>
+      <div class="menu-item"><span>Plain Chapati Roll</span><span>Ksh 60</span></div>
+      <div class="menu-item"><span>Pumpkin Chapati Roll</span><span>Ksh 60</span></div>
+      <div class="menu-item"><span>Coconut Beans + Chapati</span><span>Ksh 110</span></div>
+      <div class="menu-item"><span>Coconut Beans + Pumpkin Chapati</span><span>Ksh 130</span></div>
+    </section>
+
+    <section class="menu-section">
+      <h2>RICE DISHES</h2>
+      <div class="menu-item"><span>Rice Plain</span><span>Ksh 60</span></div>
+      <div class="menu-item"><span>Pilau</span><span>Ksh 140</span></div>
+      <div class="menu-item"><span>Vegetable Rice</span><span>Ksh 120</span></div>
+      <div class="menu-item"><span>Coconut Beans + Rice</span><span>Ksh 120</span></div>
+    </section>
+
+    <section class="menu-section">
+      <h2>EXTRAS</h2>
+      <div class="menu-item"><span>Guacamole</span><span>Ksh 40</span></div>
+      <div class="menu-item"><span>Kachumbari</span><span>Ksh 10</span></div>
+      <div class="menu-item"><span>Pilipili ya Kukaangwa</span><span>Ksh 20</span></div>
+    </section>
+
+    <section class="order-advisory">
+      <p><strong>ORDER ADVISORY</strong></p>
+      <p>Morning orders should be made the day before.</p>
+      <p>Afternoon orders should be placed in the morning.</p>
+      <p>Add Ksh 15 for packaging.</p>
+    </section>
+
+    <section class="menu-section">
+      <h2>WEEKLY MENU</h2>
+      <h3>MONDAY</h3>
+      <div class="menu-item"><span>Pilau</span><span>Ksh 165</span></div>
+      <div class="menu-item"><span>Ugali Beef</span><span>Ksh 230</span></div>
+      <div class="menu-item"><span>Beef Samosa</span><span>Ksh 40</span></div>
+      <div class="menu-item"><span>Rice + Beef</span><span>Ksh 160</span></div>
+      <div class="menu-item"><span>Githeri</span><span>Ksh 120</span></div>
+
+      <h3>TUESDAY</h3>
+      <div class="menu-item"><span>Ugali Matumbo</span><span>Ksh 200</span></div>
+      <div class="menu-item"><span>Chips</span><span>Ksh 125</span></div>
+      <div class="menu-item"><span>Chapo + Coconut Beans</span><span>Ksh 150</span></div>
+
+      <h3>WEDNESDAY</h3>
+      <div class="menu-item"><span>Ugali Mayai</span><span>Ksh 150</span></div>
+      <div class="menu-item"><span>Coconut Rice + Beans</span><span>Ksh 150</span></div>
+      <div class="menu-item"><span>Rice Minji</span><span>Ksh 170</span></div>
+
+      <h3>THURSDAY</h3>
+      <div class="menu-item"><span>Ugali Beef</span><span>Ksh 230</span></div>
+      <div class="menu-item"><span>Pilau</span><span>Ksh 165</span></div>
+      <div class="menu-item"><span>Chips</span><span>Ksh 125</span></div>
+      <div class="menu-item"><span>Chips Masala</span><span>Ksh 150</span></div>
+
+      <h3>FRIDAY</h3>
+      <div class="menu-item"><span>Chapo + Coconut Beans</span><span>Ksh 150</span></div>
+      <div class="menu-item"><span>Rice + Coconut Beans</span><span>Ksh 150</span></div>
+      <div class="menu-item"><span>Pilau</span><span>Ksh 165</span></div>
+      <div class="menu-item"><span>Ugali Matumbo</span><span>Ksh 230</span></div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="social">📸 Instagram: <a href="https://instagram.com/_kitchenoncall_k.o.c" target="_blank">@_kitchenoncall_k.o.c</a></p>
+    <p>&copy; 2025 Kitchen on Call. All rights reserved.</p>
+  </footer>
+</body>
+</html>
